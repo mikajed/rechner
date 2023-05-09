@@ -1,0 +1,110 @@
+@font-face {
+    font-family: digital-7;
+    src: url(/src/fonts/digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: url(/src/images/abhi-shek-CIQtp39DAAQ-unsplash.jpg);
+    background-size: cover;
+}
+
+#calcContainer {
+    width: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 20px 36px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#calcLcd {
+    width: 100%;
+    height: auto;
+    min-height: 6rem;
+    background-color: rgba(15, 113, 12, 0.5);
+    padding: 0 1rem;
+    margin: 1rem 0 2rem 0;
+    border: 1px solid #083606;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3) inset;
+    font-family: 'digital-7', monospace;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#calcButtons {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.calcRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calcRow button {
+    width: 150px;
+    height: 70px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #2e2e2e8f;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.calcRow button:hover {
+    background-color: #0894e693;
+}
+
+.calcRow .operator {
+    color: rgba(4, 131, 0, 0.842);
+}
+
+.calcRow .operator:hover {
+    color: #fff;
+    background-color: #d86b06;
+}
+
+.calcRow #gleich {
+    width: 100%;
+    color: rgba(4, 131, 0, 0.842);
+}
+
+.calcRow #gleich:hover {
+    color: #fff;
+    background-color: #d86b06;
+}
+
+.calcRow #delete {
+    color: #fff;
+    background-color: rgba(131, 0, 0, 0.842);
+}
+
+.calcRow #delete:hover {
+    color: #fff;
+    background-color: rgba(66, 1, 1, 0.842);
+}
