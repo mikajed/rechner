@@ -5,7 +5,7 @@ let berechnung = [];
 let kumulativeBerechnung;
 
 function rechne(button) {
-    //console.log(button)
+    //console.log(button);
     const value = button.textContent;
     if (value === "C") {
         berechnung = [];
@@ -16,7 +16,7 @@ function rechne(button) {
         berechnung.push(value);
         kumulativeBerechnung = berechnung.join("");
         display.textContent = kumulativeBerechnung;
-        //console.log(berechnung)
+        //console.log(berechnung);
     }
 }
 
