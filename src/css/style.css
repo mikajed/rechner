@@ -1,6 +1,9 @@
 @font-face {
-    font-family: 'digital-7';
-    src: url(/src/fonts/digital-7.ttf);
+    font-family: 'digital-7regular';
+    src: url('../fonts/digital-7-webfont.woff2') format('woff2'),
+         url('../fonts/digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -42,7 +45,7 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(8px);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.3) inset;
-    font-family: 'digital-7', monospace;
+    font-family: 'digital-7regular';
     font-size: 5rem;
     display: flex;
     align-items: center;
