@@ -1,8 +1,8 @@
-const display = document.querySelector('#calcLcd')
-const buttons = document.querySelectorAll('button')
+const display = document.querySelector('#calcLcd');
+const buttons = document.querySelectorAll('button');
 
-let berechnung = []
-let kumulativeBerechnung
+let berechnung = [];
+let kumulativeBerechnung;
 
 function rechne(button) {
     //console.log(button)
@@ -11,13 +11,13 @@ function rechne(button) {
         berechnung = []
         display.textContent = ''
     } else if (value === '=') {
-        display.textContent = eval(kumulativeBerechnung)
+        display.textContent = eval(kumulativeBerechnung);
     } else {
         berechnung.push(value)
         kumulativeBerechnung = berechnung.join('')
         display.textContent = kumulativeBerechnung
         //console.log(berechnung)
     }
-}
+};
 
-buttons.forEach(button => button.addEventListener('click', () => rechne(button)))
+buttons.forEach(button => button.addEventListener('click', () => rechne(button)));
