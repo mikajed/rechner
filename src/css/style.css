@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     font-family: sans-serif;
     /* background-image: url(/src/images/abhi-shek-CIQtp39DAAQ-unsplash.jpg); */
@@ -32,6 +33,7 @@ body {
     border-radius: 20px;
     padding: 20px 36px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 2rem;
 }
 
 #calcLcd {
@@ -83,6 +85,7 @@ body {
 }
 
 .calcRow button:hover {
+    color: #fff;
     background-color: #0894e693;
 }
 
@@ -113,4 +116,25 @@ body {
 .calcRow #delete:hover {
     color: #fff;
     background-color: rgba(66, 1, 1, 0.842);
+}
+
+#print {
+    width: 200px;
+    height: auto;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #2e2e2e8f;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;    
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#print:hover {
+    color: #fff;
+    background-color: #0894e693;
 }
